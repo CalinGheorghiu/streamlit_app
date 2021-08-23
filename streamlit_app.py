@@ -10,6 +10,14 @@ k=0
 col1,col2=st.columns(2)
 templates=[]
 names=[]
+login=st.container()
+username=st.text_input("Username",value="")
+password=st.text_input("Password",value="")
+with login:
+    username
+    password
+    submit=st.button("Log in")
+
 with st.form(key='template-form'):
         instance_name=st.text_input("Instance Name")
         template_source=st.selectbox("Template",[1,2,3])
