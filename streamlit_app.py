@@ -16,9 +16,9 @@ password=st.text_input("Password",value="")
 with login:
     st.write(username)
     st.write(password)
-    submit=st.button("Log in")
+    submit1=st.button("Log in")
 
-if submit:
+if submit1:
     if username=="admin" and password=="admin":
         with st.form(key='template-form'):
                 instance_name=st.text_input("Instance Name")
